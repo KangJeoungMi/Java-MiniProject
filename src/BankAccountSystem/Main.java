@@ -28,6 +28,9 @@ public class Main {
                 System.out.println("종료합니다");
                     return;
                 case 1:
+                    Transition.ShowAccount();
+                    break;
+                case 2:
                     Account.MakeAccount();
                     break;
                 default:

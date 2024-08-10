@@ -12,7 +12,7 @@ class Transition {
         System.out.println("계좌 조회(번호로 조회해주세요.) : ");
         while (true) {
             System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
-            System.out.print("   0. 종료 | 1. 입금 | 2. 출금 | 3. 잔액조회");
+            System.out.println("   0. 종료 | 1. 입금 | 2. 출금 | 3. 잔액조회");
             System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
             System.out.print(">>");
 
@@ -24,13 +24,14 @@ class Transition {
                 System.out.println("종료합니다");
                     return;
                 case 1:
-                    ShowMoney();
+                deposite();
+                    
                     break;
                 case 2:
-                    deposite();
+                    withdraw();
                     break;
                 case 3:
-                    withdraw();
+                    ShowMoney();
                     break;
                 default:
                     System.out.println("다시 입력해주세요");
@@ -39,11 +40,19 @@ class Transition {
         }
     }
     //잔액조회
-    public static void ShowMoney(){}
+    public static void ShowMoney(){
+        System.out.println("잔액조회");
+    }
+
     // 입금
-    public static void deposite(){}
+    public static void deposite(){
+        System.out.println("입금");
+    }
 
     // 출금
-    public static void withdraw(){}
+    public static void withdraw(){
+        System.out.println("출금");
+
+    }
 
 }
